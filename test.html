@@ -5,7 +5,7 @@
         <input type="hidden" name="MerchantID" id="MerchantID" value="">
         <input type="hidden" name="TradeInfo" id="TradeInfo" value="">
         <input type="hidden" name="TradeSha" id="TradeSha" value="">
-        <input type="hidden" name="Version" value="2.2">
+        <input type="hidden" name="Version" value="2.0">
     </form>
 </body>
 <script type="text/javascript">
@@ -15,7 +15,7 @@
         const merchantID = urlParams.get('merchantID');
         const tradeInfo = urlParams.get('tradeInfo');
         const tradeSha = urlParams.get('tradeSha');
-
+        
         // 將解析出來的查詢參數設置為表單欄位的值
         if (merchantID) {
             document.getElementById('MerchantID').value = merchantID;
